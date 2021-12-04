@@ -1,0 +1,42 @@
+<input id="a1" type="number" value="">
+<input id="a2" type="number" value="">
+<button onclick="Add()">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;</button>
+<button onclick="Sub()">&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;</button>
+<button onclick="Mul()">&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;</button>
+<button onclick="Div()">&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;</button>
+<div id="root"></div>
+<script>
+var Add=function(){
+    var a=document.getElementById('a1').value
+    var b=document.getElementById('a2').value
+    console.log(parseInt(a)+parseInt(b))
+    document.getElementById('root').innerHTML=parseInt(a)+parseInt(b)
+}
+</script>
+
+<script>
+var Sub=function(){
+    var a=document.getElementById('a1').value
+    var b=document.getElementById('a2').value
+    console.log(parseInt(a)-parseInt(b))
+    document.getElementById('root').innerHTML=parseInt(a)-parseInt(b)
+}
+</script>
+
+<script>
+    var Mul=function(){
+        var a=document.getElementById('a1').value
+        var b=document.getElementById('a2').value
+        console.log(parseInt(a)*parseInt(b))
+        document.getElementById('root').innerHTML=parseInt(a)*parseInt(b)
+    }
+    </script>
+
+<script>
+    var Div=function(){
+        var a=document.getElementById('a1').value
+        var b=document.getElementById('a2').value
+        console.log(parseInt(a)/parseInt(b))
+        document.getElementById('root').innerHTML=parseInt(a)/parseInt(b)
+    }
+    </script>
